@@ -1,7 +1,7 @@
 #' @title Major League Baseball Batting Statistics
 #' 
 #' @description 
-#' The \code{batting} dataset contains MLB player, salary, and hitting
+#' The batting dataset contains MLB player, salary, and hitting
 #' statistics from Sean Lahman's Baseball Database. 
 #' 
 #' @details
