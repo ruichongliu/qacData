@@ -9,3 +9,4 @@ Description: This package contains dataset for use in QAC courses.
 LazyData: yes
 License: GPL-3
 RoxygenNote: 6.1.0
+Depends: R (>= 2.10)
