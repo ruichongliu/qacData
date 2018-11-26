@@ -67,3 +67,4 @@
 #' regression <- lm(BA ~ ., data = batting)
 #' summary(regression)
 #' plot(regression)
+NULL

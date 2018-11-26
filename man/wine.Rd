@@ -22,7 +22,7 @@ The variables are as follows:
    \item{winery}{winery where the wine was produced}
 }}
 \source{
-The full data set can be found on \link{https://www.kaggle.com/zynicide/wine-reviews}
+The full data set can be found on \href{https://www.kaggle.com/zynicide/wine-reviews}{kaggle}
 }
 \usage{
 wine
@@ -34,6 +34,9 @@ States, France, and Italy.
 \examples{
 table(wine$points)
 hist(wine$points)
-plot(wine$points, wine$price, main = "Wine Prices by Score", xlab = "Score (1-100)", ylab = "Price ($)")
+plot(wine$points, wine$price, 
+     main = "Wine Prices by Score", 
+     xlab = "Score (1-100)", 
+     ylab = "Price ($)")
 }
 \keyword{datasets}

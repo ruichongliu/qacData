@@ -1,6 +1,9 @@
 #' @title Time Spent Watching TV on a Day Surveyed, 2017
 #' @description This is a data set detailing TV usage on days surveyed as determined by the 2017 American Time Use Survey. The data set includes demographic information, as well as details regarding employment and family makeup, where applicable. Information on days surveyed, as well as whether the day is a holiday, is also included. 
 #' @usage tv17
+#' @docType data
+#' @keywords datasets
+#' @name tv17
 #' @param id  ID of respondent
 #' @param weight ATUS final weight
 #' @param youngest_child Age of the youngest child in the household that is less than 18 years old (if applicable). Range: 1-17; if no child in household: NA
@@ -19,7 +22,6 @@
 #' @param educ Are you enrolled in high school, college, or university? (NA if not currently enrolled)
 #' @param educ2 If yes to educ, are you enrolled in high school or upper schooling? (NA if not currently enrolled)
 #' @param partner Presence of the respondent’s spouse or unmarried partner in the household
-#'@
 #'  \itemize{
 #'  \item{"1"}{Spouse present}
 #'  \item{"2"}{Unmarried partner present}
@@ -36,3 +38,4 @@
 #' @param child_time Total time spent during diary day providing secondary childcare for household children younger than 13, in minutes 
 #' @param tv Minutes spent watching TV
 #' @details For more information regarding the key visit https://www.bls.gov/tus/atusintcodebk17.pdf. This data is retrieved from the American Time Use Survey, made available through the Bureau of Labor Statistics https://www.bls.gov/tus/datafiles_2017.htm. 
+NULL

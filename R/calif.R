@@ -33,3 +33,4 @@
 #'table(housing$ocean_proximity)
 #'sum(is.na(housing$total_bedrooms))
 #'table(housing$total_bedrooms,housing$housing_median_age,housing$ocean_proximity)
+NULL
