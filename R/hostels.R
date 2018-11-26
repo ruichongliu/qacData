@@ -5,8 +5,8 @@
 #' 
 #' @docType data
 #' @keywords datasets, hostels, japan, reviews
-#' @name hostelsjpn
-#' @usage hostelsjpn
+#' @name hostels
+#' @usage hostels
 #' 
 #' @format A data frame with 342 rows and 15 variables. The variables are
 #' as follows:
@@ -32,4 +32,5 @@
 #' 
 #' 
 #' @examples
-#' summary(hostelsjpn)
+#' summary(hostels)
+NULL
