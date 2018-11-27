@@ -104,117 +104,57 @@
     </div>
 
     <pre class="usage"><span class='no'>tv17</span></pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>id</th>
-      <td><p>ID of respondent</p></td>
-    </tr>
-    <tr>
-      <th>weight</th>
-      <td><p>ATUS final weight</p></td>
-    </tr>
-    <tr>
-      <th>youngest_child</th>
-      <td><p>Age of the youngest child in the household that is less than 18 years old (if applicable). Range: 1-17; if no child in household: NA</p></td>
-    </tr>
-    <tr>
-      <th>age</th>
-      <td><p>Age of respondent</p></td>
-    </tr>
-    <tr>
-      <th>sex</th>
-      <td><p>Sex of respondent</p></td>
-    </tr>
-    <tr>
-      <th>job</th>
-      <td><p>Status of employment of the respondent. Direct transcription from original codebook:</p><ul>
-<li><p>"1"Employed, at work</p></li>
-<li><p>"2"Employed, absent</p></li>
-<li><p>"3"Unemployed, on layoff</p></li>
-<li><p>"4"Unemployed, looking</p></li>
-<li><p>"5"Not in the labor force</p></li>
-</ul></td>
-    </tr>
-    <tr>
-      <th>m_job</th>
-      <td><p>The response to question, “in the last seven days did you have more than one job?” Returns NA if no job.</p></td>
-    </tr>
-    <tr>
-      <th>f_job</th>
-      <td><p>Does the respondent have a full time job or a part time job? (NA if no job)</p></td>
-    </tr>
-    <tr>
-      <th>educ</th>
-      <td><p>Are you enrolled in high school, college, or university? (NA if not currently enrolled)</p></td>
-    </tr>
-    <tr>
-      <th>educ2</th>
-      <td><p>If yes to educ, are you enrolled in high school or upper schooling? (NA if not currently enrolled)</p></td>
-    </tr>
-    <tr>
-      <th>partner</th>
-      <td><p>Presence of the respondent’s spouse or unmarried partner in the household</p><ul>
-<li><p>"1"Spouse present</p></li>
-<li><p>"2"Unmarried partner present</p></li>
-<li><p>"3"No spouse/unmarried partner present</p></li>
-</ul></td>
-    </tr>
-    <tr>
-      <th>pr_job</th>
-      <td><p>Answer to the question, “does your partner have a job?” (NA if not applicable)</p></td>
-    </tr>
-    <tr>
-      <th>salary</th>
-      <td><p>Weekly earnings at the respondent’s main job, two decimals implied</p></td>
-    </tr>
-    <tr>
-      <th>children</th>
-      <td><p>Number of children under 18 in the household</p></td>
-    </tr>
-    <tr>
-      <th>pr_job_f</th>
-      <td><p>Part time/full time job status of partner, if applicable (NA if partner unemployed or no partner)</p></td>
-    </tr>
-    <tr>
-      <th>job_hours</th>
-      <td><p>Total hours usually worked per week (-4: Hours vary)</p></td>
-    </tr>
-    <tr>
-      <th>day</th>
-      <td><p>Day of the week about which the respondent was interviewed (Monday thorugh Friday)</p></td>
-    </tr>
-    <tr>
-      <th>holiday</th>
-      <td><p>Notes if the respondent was interviewed on a holiday</p></td>
-    </tr>
-    <tr>
-      <th>elder_care</th>
-      <td><p>Total time spent providing elder care that day by the respondent, in minutes</p></td>
-    </tr>
-    <tr>
-      <th>child_time</th>
-      <td><p>Total time spent during diary day providing secondary childcare for household children younger than 13, in minutes</p></td>
-    </tr>
-    <tr>
-      <th>tv</th>
-      <td><p>Minutes spent watching TV</p></td>
-    </tr>
-    </table>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>A data frame with 10,223 rows and 21 variables. The variables are
+as follows:</p><dl class='dl-horizontal'>
+<dt>id</dt><dd><p>ID of respondent</p></dd>
+<dt>weight</dt><dd><p>ATUS final weight</p></dd>
+<dt>youngest_child</dt><dd><p>Age of the youngest child in the household that is less than 18 years old (if applicable). Range: 1-17; if no child in household: NA</p></dd>
+<dt>age</dt><dd><p>Age of respondent</p></dd>
+<dt>sex</dt><dd><p>Sex of respondent</p></dd>
+<dt>job</dt><dd><p>Status of employment of the respondent. Direct transcription from original codebook:
+ 1 = Employed, at work,
+ 2 = Employed, absent,
+ 3 = Unemployed, on layoff,
+ 4 = Unemployed, looking,
+ 5 = Not in the labor force.</p></dd>
+<dt>m_job</dt><dd><p>The response to question, “in the last seven days did you have more than one job?” Returns NA if no job.</p></dd>
+<dt>f_job</dt><dd><p>Does the respondent have a full time job or a part time job? (NA if no job)</p></dd>
+<dt>educ</dt><dd><p>Are you enrolled in high school, college, or university? (NA if not currently enrolled)</p></dd>
+<dt>educ2</dt><dd><p>If yes to educ, are you enrolled in high school or upper schooling? (NA if not currently enrolled)</p></dd>
+<dt>partner</dt><dd><p>Presence of the respondent's spouse or unmarried partner in the household with
+ 1 = Spouse present
+ 2 = Unmarried partner present
+ 3 = No spouse/unmarried partner present</p></dd>
+<dt>pr_job</dt><dd><p>Answer to the question, “does your partner have a job?” (NA if not applicable)</p></dd>
+<dt>salary</dt><dd><p>Weekly earnings at the respondent’s main job, two decimals implied</p></dd>
+<dt>children</dt><dd><p>Number of children under 18 in the household</p></dd>
+<dt>pr_job_f</dt><dd><p>Part time/full time job status of partner, if applicable (NA if partner unemployed or no partner)</p></dd>
+<dt>job_hours</dt><dd><p>Total hours usually worked per week (-4: Hours vary)</p></dd>
+<dt>day</dt><dd><p>Day of the week about which the respondent was interviewed (Monday thorugh Friday)</p></dd>
+<dt>holiday</dt><dd><p>Notes if the respondent was interviewed on a holiday</p></dd>
+<dt>elder_care</dt><dd><p>Total time spent providing elder care that day by the respondent, in minutes</p></dd>
+<dt>child_time</dt><dd><p>Total time spent during diary day providing secondary childcare for household children younger than 13, in minutes</p></dd>
+<dt>tv</dt><dd><p>Minutes spent watching TV</p></dd>
+</dl>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>For more information regarding the key visit https://www.bls.gov/tus/atusintcodebk17.pdf. This data is retrieved from the American Time Use Survey, made available through the Bureau of Labor Statistics https://www.bls.gov/tus/datafiles_2017.htm.</p>
+    <p>For more information regarding the key visit 
+<a href='https://www.bls.gov/tus/atusintcodebk17.pdf'>https://www.bls.gov/tus/atusintcodebk17.pdf</a>. 
+This data is retrieved from the American Time Use Survey, made available through the 
+Bureau of Labor Statistics <a href='https://www.bls.gov/tus/datafiles_2017.htm'>https://www.bls.gov/tus/datafiles_2017.htm</a>.</p>
     
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
+      <li><a href="#format">Format</a></li>
+
       <li><a href="#details">Details</a></li>
           </ul>
 
