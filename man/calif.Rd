@@ -29,11 +29,9 @@ calif
 Home prices in California in 1990 from the California Census.
 }
 \examples{
-summary(housing)
-plot(, pbp2018$plate_z)
-table(housing$ocean_proximity)
-sum(is.na(housing$total_bedrooms))
-table(housing$total_bedrooms,housing$housing_median_age,housing$ocean_proximity)
+summary(calif)
+table(calif$ocean_proximity)
+sum(is.na(calif$total_bedrooms))
 }
 \keyword{1990,}
 \keyword{california,}

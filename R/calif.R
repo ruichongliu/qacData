@@ -28,9 +28,7 @@
 #'@source The data was obtained from \href{https://www.kaggle.com/harrywang/housing}{Kaggle California Housing Data 1990}.
 #'
 #'@examples
-#'summary(housing)
-#'plot(, pbp2018$plate_z)
-#'table(housing$ocean_proximity)
-#'sum(is.na(housing$total_bedrooms))
-#'table(housing$total_bedrooms,housing$housing_median_age,housing$ocean_proximity)
+#'summary(calif)
+#'table(calif$ocean_proximity)
+#'sum(is.na(calif$total_bedrooms))
 NULL
