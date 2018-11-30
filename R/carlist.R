@@ -9,7 +9,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name carlist
-#' @usage data(carlist, package='qacData')
+#' @usage carlist
 #'
 #' @format A data frame with 11914 rows and 16 variables. The variables are as follows:
 #'
@@ -32,6 +32,7 @@
 #'   \item{MSRP}{manufacturer's suggested retail price}
 #' }
 #'
-#' @source Taken from Kaggle (url: https://www.kaggle.com/CooperUnion/cardataset).
-#'
+#' @source Taken from Kaggle (\href{https://www.kaggle.com/CooperUnion/cardataset}{https://www.kaggle.com/CooperUnion/cardataset}).
+#' @examples
+#' sumamry(carlist)
 NULL
